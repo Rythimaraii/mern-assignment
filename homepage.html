@@ -6,12 +6,12 @@
     <title>Home Page</title>
 
     <link href="https://fonts.googleapis.com/css?family=Tiny5:regular" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     
     <style>
         .banner {
     width: 100%;
-    background-color: #000000; /* Change color as needed */
+   
     color: #ffffff; /* Change text color as needed */
     text-align: left;
     padding-bottom: 20px;
@@ -21,7 +21,7 @@
 .search1 {
     width: 50px;
     height: 50px;
-    margin-right: 500px;
+    margin-right: 200px;
     margin-left:0px;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .banner {
     width: 100%;
-    background-color: #000000; /* Change color as needed */
+   
     color: #ffffff; /* Change text color as needed */
     text-align: left;
     padding-bottom: 20px;
@@ -73,12 +73,24 @@ body {
     position: relative;
     display: inline-block;
     margin-inline-start: 20px;
+    font-family: archivo;
+    
 }
 
-.logo, .search1, .dropdown , .Game, .search2, .sign-in{
+.logo, .search1, .dropdown , .Game, .search2{
             display: inline-block;
              
-            margin-inline-start: 20px; /* Adjust margin between elements */
+            margin-inline-start:0px; /* Adjust margin between elements */
+        } 
+
+        .dropdown input[type="checkbox"] {
+            display: none; /* Hide the checkbox */
+        }
+
+        .dropdown , .Game, .search2{
+            display: inline-block;
+             
+            margin-inline-start:35px; /* Adjust margin between elements */
         } 
 
         .dropdown input[type="checkbox"] {
@@ -95,9 +107,9 @@ body {
     border: 5px solid rgba(253, 225, 15, 0.893);
     padding: 12px;
     border-radius: 5px;
-    font-size:20px;
+    font-size:18px;
     font-family:'Tiny5', sans-serif;
-    margin-left:40px;
+    margin-left:350px;
 }
 
 .dropdown-content, .dropdown-cont {
@@ -135,11 +147,11 @@ body {
             <label class="searchbar">
                 <img class="logo" src="retro.jpg.png" alt="">
                 <img class="search1" src=https://cdn.dribbble.com/users/1649915/screenshots/4649111/media/7df29e42019ad04c092bfa14fe6bd9a1.gif alt="">
-                <input class="search2" type="text" name="search" id="search" placeholder="Search">
+                <input class="search2" type="text" name="search" id="search" placeholder="Search"> 
                 </label>
                 
                      <div class="dropdown">
-                        <label for="dropdown1">About us</label>
+                        <label for="dropdown1">ABOUT US</label>
                         <input type="checkbox" id="dropdown1">
                         <div class="dropdown-content">
                             <a href="#">Our Vision</a>
@@ -150,7 +162,7 @@ body {
                         </div>
                     
                     <div class="Game">
-                        <label for="dropdown2">Game</label>
+                        <label for="dropdown2">GAMES</label>
                         <input type="checkbox" id="dropdown2">
                         <div class="dropdown-cont">
                             <a href="#">Car Game</a>
