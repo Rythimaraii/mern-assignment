@@ -136,6 +136,41 @@ body {
 .dropdown input:focus + .dropdown-content, .Game input:focus + .dropdown-cont {
     display: inline-block;
 }
+.contain {
+            display: flex;
+            height: 70%;
+            padding-top: 20px;
+            width: 90%;
+            margin : 0 auto;
+            position: relative; /* Added relative positioning */
+        }
+
+        .contactus-1 {
+            flex: 1;
+        }
+
+        .contactus-1 .card {
+            height: 70%;
+            width: 60%;     
+            text-align: left;
+            
+        }
+        .contactus-1 .right-display {
+            border: 3px solid black;
+            box-shadow: 4px 10px 10px 10px #00000079;
+            position: absolute;
+            overflow: hidden;
+            height:500px; /* Changed height to 100% */
+            width: 600px; /* Changed width to 100% */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contactus-1 .bg-img {
+            object-fit: stretch; /* Added object-fit for image */
+        }
+
 
 
 
@@ -189,6 +224,8 @@ body {
                 
             
             </div>
+            <div class="contain">
+                
             <div class="contactus-1">
                 <div class="card">
                     <h1 class="game-title">DISCOVER NEW GAMES</h1>
@@ -200,12 +237,9 @@ body {
 
             <div class="contactus-1">
                 <div class="right-display">
-                    <img src="C:\Users\Arti Rai\OneDrive\Desktop\mern assignment\WhatsApp Image 2024-06-12 at 06.55.02_52a0941f.jpg" alt="Image" class="bg-image">
+                    <img src="WhatsApp Image 2024-06-12 at 06.55.02_52a0941f.jpg" alt="Image" class="bg-image">
             
         </div>
-
-
-
 
     </div>
     
