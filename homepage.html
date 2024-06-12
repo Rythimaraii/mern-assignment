@@ -4,30 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Tiny5:regular" rel="stylesheet" />
+
+    
     <style>
         .banner {
-            width: 100%;
-            background-color: #000000; /* Change color as needed */
-            color: #ffffff; /* Change text color as needed */
-            text-align: left;
-            padding-bottom: 50px;
-            margin-bottom: 20px;
-            height: 30%;
-        }
+    width: 100%;
+    background-color: #000000; /* Change color as needed */
+    color: #ffffff; /* Change text color as needed */
+    text-align: left;
+    padding-bottom: 20px;
+    height: 40%;
+}
 
-        .search1{
-            width: 20px;
-            height: 20px;
-        
-                }
+.search1 {
+    width: 50px;
+    height: 50px;
+    margin-right: 500px;
+    margin-left:0px;
+}
 
-        .logo{
-            width: 50px;
-            height: 50px;
-            margin-left: 10px;
-            margin-top: 10px;
-            margin-right: 900px;
+body {
+    height: 250vh;
+    width: 100vw;
+    background-image: url(https://cdn.gencraft.com/prod/user/691b16b0-0d0f-4041-ae81-acfe5dd9d856/480d7cc7-bd46-465f-8fbb-161f48202dc4/image/image1_0.jpg?Expires=1718239125&Signature=L-fCaUzUXYWGKc263Fi1O74H9gGoYiYenETIvXg2Bf~K3FXB7ptvZhdCw7wPjVZCN55vscEA-wNniJ1i2YoYX6JXYQPQBo1V8sjXBjAXUnxuFwKfM3qi6P0Zr5Nkkqi4K1qfrY1lVTNeYquTD6uCMzOSKInM4ShSIP~Y7sHxnDP8XH8yRA8bIFiUPiLRbdZHEyyAkhH5qySW9uoAEBSdtxFIxOfvGoZYyKTXAfZajRDfqe~Scu368~QDorIp11tVIMJMxhbjuXdE1wTU7wuN~8iFcsryVL01O3NXc~Jj471yTd7nF8pSOF9xCFxmVnt~7OoCfRsHD-L2yqKIIS4bsg__&Key-Pair-Id=K3RDDB1TZ8BHT8);
+    background-size: cover;
+    background-position:relative;
+    margin: 0;
+}
+
+
+
+
+.search2 {
+    width: 150px;
+    height: 20px;
+    padding: 20px 20px 10px 20px; /* Adjust padding to make room for the icon */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-image: url('https://media.istockphoto.com/id/924437708/vector/magnifying-glass-icon.jpg?s=612x612&w=0&k=20&c=VXDoaQ6Ns61N2v6CsMXX-vYlG5oUY3ufoUncvUp1zNY='); /* Replace 'search-icon.png' with your icon path */
+    background-position: 10px left;
+    background-repeat: no-repeat;
+    background-size: 25px; /* Adjust size of the icon */
+    background-position: 0px;
+    box-sizing: border-box;
+
+}
+
+
+.logo {
+    width: 300px;
+    height: 50px;
+    margin-right:0px;
+    margin-top: 20px;
+}
+
+.banner {
+    width: 100%;
+    background-color: #000000; /* Change color as needed */
+    color: #ffffff; /* Change text color as needed */
+    text-align: left;
+    padding-bottom: 20px;
+    height: 40%;
+}
+
+.dropdown, .Game , .search2, .search1, .logo{
+    position: relative;
+    display: inline-block;
+    margin-inline-start: 20px;
+}
+
+.logo, .search1, .dropdown , .Game, .search2, .sign-in{
+            display: inline-block;
+             
+            margin-inline-start: 20px; /* Adjust margin between elements */
+        } 
+
+        .dropdown input[type="checkbox"] {
+            display: none; /* Hide the checkbox */
         }
+.dropdown input, .Game input {
+    display: inline-block;
+}
+
+.sign-in{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    border: 5px solid rgba(253, 225, 15, 0.893);
+    padding: 12px;
+    border-radius: 5px
+    font-size: 20px;
+    font-family: 'Tiny5', sans-serif;
+    margin-left: 40px;
+}
+
+.dropdown-content, .dropdown-cont {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a, .dropdown-cont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown input:checked + .dropdown-content, .Game input:checked + .dropdown-cont {
+    display: inline-block;
+    
+}
+
+.dropdown input:focus + .dropdown-content, .Game input:focus + .dropdown-cont {
+    display: inline-block;
+}
+
 
 
     </style>
@@ -35,21 +132,50 @@
 <body>
     <div class="container">
         <div class="banner">
-            <div class="searchbar">
-                <img class="logo" src="https://images-platform.99static.com/WgQtesftCevstTiBjm1v1MNfYU0=/157x157:1417x1417/500x500/top/smart/99designs-contests-attachments/116/116007/attachment_116007086" alt="">
-                <img class="search1" src="https://cdn-icons-png.flaticon.com/512/200/200941.png" alt="">
-                <input type="text" name="search" id="search" placeholder="Search"> 
+            <label class="searchbar">
+                <img class="logo" src="retro.jpg.png" alt="">
+                <img class="search1" src=https://cdn.dribbble.com/users/1649915/screenshots/4649111/media/7df29e42019ad04c092bfa14fe6bd9a1.gif alt="">
+                <input class="search2" type="text" name="search" id="search" placeholder="Search"> 
+                </label>
                 
+                     <div class="dropdown">
+                        <label for="dropdown1">About us</label>
+                        <input type="checkbox" id="dropdown1">
+                        <div class="dropdown-content">
+                            <a href="#">Our Vision</a>
+                            <a href="#">Message </a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Our Mission</a>
 
-                
-            </div>
+                        </div>
+                    
+                    <div class="Game">
+                        <label for="dropdown2">Game</label>
+                        <input type="checkbox" id="dropdown2">
+                        <div class="dropdown-cont">
+                            <a href="#">Car Game</a>
+                            <a href="#">truck Game</a>
+                            <a href="#">Bike Game</a>
+                            <a href="#">zombie Game</a>
+                            <a href="#">shooting Game</a>
+                            <a href="#">Racing Game</a>
+                        </div>
+                        <div class="sign-in">
+                            <label for="dropdown3">SIGN IN</label>
 
+                            <input type="checkbox" id="dropdown3">
+
+                            <div class="dropdown-cont">
+                                <a href="#">Sign in</a>
+                                <a href="#">Sign up</a>
+                                
+
+                        </div>
+                    </div>
+                </div>
             
             </div>
-            <div class="searchbtn">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
+            
         </div>
 
 
